@@ -4,11 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function Add(x,y){
+  return x+y;
+}
+
+function MyComponent(){
+  const name="Adeeba Adeel";
+  const link="https://google.com"
+ return <h1>Hello,{name}  {Add(10,5)} <a href={link}>google</a></h1>
+
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>
+  //   <MyComponent />
+  // </React.StrictMode>
+
+<React.StrictMode>
+<App />
+</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
